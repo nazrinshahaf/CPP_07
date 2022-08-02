@@ -6,7 +6,7 @@
 /*   By: nazrinshahaf <marvin@42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 15:03:02 by nazrinsha         #+#    #+#             */
-/*   Updated: 2022/06/02 17:37:04 by nazrinsha        ###   ########.fr       */
+/*   Updated: 2022/08/02 10:46:29 by nfernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	main()
 		cout << MAGENTA "Printing array2..." RESET << endl;
 		array2->printArray();
 		cout << endl;
-		
+
 		cout << MAGENTA "Deleting array1" RESET << endl;
 		delete array;
 		cout << MAGENTA "Printing array2..." RESET << endl;
@@ -87,6 +87,7 @@ int	main()
 			(*array)[i] = static_cast<int>(i);
 		array->printArray();
 
+		cout << endl;
 		cout << CYAN "[Trying to index out of bounds array]" RESET << endl;
 
 		try
@@ -118,6 +119,7 @@ int	main()
 			(*array)[i] = static_cast<float>(i);
 		array->printArray();
 
+		cout << endl;
 		cout << CYAN "[Trying to get size of array]" RESET << endl;
 		cout << "Array size: " MAGENTA "<" << array->size() << ">" RESET << endl;
 
